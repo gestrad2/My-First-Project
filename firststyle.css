@@ -1,0 +1,260 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  :root {
+      --dark-color: #9e658d;
+      --light-color: #e7c1e2;
+  }
+
+  body {
+    font-family: Didot, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  header {
+      color: #edf0f1;
+  }
+
+  nav {
+      background-color: var(--dark-color);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  nav * {
+      color: #edf0f1;
+  }
+
+  nav ul{
+    display: flex;
+    list-style: none;
+    width: 25%;
+    justify-content: space-around;
+    margin-right: 20px;
+  }
+
+  nav a {
+text-decoration: none;
+margin: 0px 20px;
+  }
+
+  .Logo {
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  .jumbo-text{
+      background-color: var(--dark-color) ;
+      opacity: 0.9;
+      width: 100%;
+  }
+
+  nav div{
+      display: flex;
+      width: 50vw;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0;
+  }
+
+  nav ul{
+      margin: 0;
+  }
+
+  nav button {
+    position: relative;
+    /*top: 300px;*/
+    cursor: pointer;
+    background-color: #56346d;
+    color: #ddd;
+    border: 2px solid #56346d;
+    border-radius: 20px;
+    width: 125px;
+    height: 50px;
+  }  
+
+  .jumbotron{
+      width: 100%;
+      height: 400px;
+      background-image: url(./JD5I2H2JJRH6PMVGXSZUDLZCDI.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0;
+  }
+
+  #price{
+      background-color: var(--dark-color);
+      color: #ddd;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 500px;
+  }
+
+  .card{
+      margin: 0 auto;
+      width: 300px;
+      height: 50%;
+      padding: 50px 0;
+      text-align: center;
+      border: 2px solid #56346d;
+      border-radius: 10px;
+  }
+
+  .first{
+      background-image: url(./Screen\ Shot\ 2020-11-25\ at\ 6.05.39\ PM.png);
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .second{
+      background-image: url(./Screen\ Shot\ 2020-11-25\ at\ 6.19.10\ PM.png);
+      background-repeat: no-repeat;
+      background-position: center;
+
+  }
+  .third{
+      background-image: url(./Screen\ Shot\ 2020-11-25\ at\ 6.21.03\ PM.png);
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .card ul{
+      list-style: square;
+      text-style:left;
+      margin: 30px 0;
+  }
+
+  #cases hr{
+      min-width: 500px;
+      border: 2px solid rgb(115, 78, 129);
+  }
+
+  footer{
+      background-color: var(--dark-color);
+      color: #666;
+      height: 100px;
+      padding: 10px;
+  }
+
+  footer ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .Projects{
+    width: 100%;
+    padding: 50px;
+    margin: 0;
+    color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Projects2{
+    width: 100%;
+    padding: 50px;
+    margin: 0;
+    color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Projects3{
+    width: 100%;
+    padding: 50px;
+    margin: 0;
+    color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  #cases {
+      background-color: var(--light-color);
+      color: #666;
+      display: flex;
+      flex-direction: column;
+  }
+
+ /*  #cases div {
+      margin: 50px 10% 0 10%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  } */
+
+  #cases h2 {
+      width: 100%;
+      align-items: center;
+  }
+
+  #cases p {
+      max-width: 500px;
+  }
+
+  #cases img {
+      max-width: 40%;
+  }
+
+  #studies {
+      display: flex;
+      justify-content: center;
+  }
+
+  #about {
+    background-color: #e7c1e2;   
+  }
+
+  h5{
+      color: black;
+  }
+
+  p{
+      color:black;
+  }
+
+  @media screen and (max-width: 1040px) {
+    #cases div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #cases h2 {
+      width: auto;
+    }
+    #studies hr {
+      width: 50%;
+    }
+    #studies {
+   display: flex;
+    }
+    #about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    form {
+      flex-direction: column;
+      align-items: center;
+      height: 70px;
+    }
+  }
